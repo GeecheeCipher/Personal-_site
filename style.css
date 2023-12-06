@@ -108,6 +108,21 @@
   border: solid;
   border-color: white 2px;
 }
+.contact {
+  background-color: grey;
+  color: black;
+  border: dotted;
+  height: 36px;
+  width: 95px;
+  border-radius: 15px;
+  cursor: cell;
+  font-family: monospace;
+  margin: 2%;
+}
+.contact:hover {
+  background-color: lightgray;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0.15);
+}
 h1 {
   font-family: monospace;
 }
@@ -131,4 +146,15 @@ body {
 }
 p.responsive {
   border-radius: 15px;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div2 {
+  grid-area: 2 / 3 / 4 / 5;
 }
